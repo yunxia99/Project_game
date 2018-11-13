@@ -1,0 +1,3 @@
+﻿  game.c
+e:\hello world\project_game\project_game\game.c(79): warning C4013: “getch”未定义；假设外部返回 int
+  Project_game.vcxproj -> E:\hello world\Project_game\Debug\Project_game.exe
