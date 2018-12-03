@@ -4,7 +4,7 @@
 *by ут©║
 *2018.11.4
 *************/
-#include<stdio.h>
+#include"function.h"
 int main(int *argc, char **argv) {
 
 	init();
