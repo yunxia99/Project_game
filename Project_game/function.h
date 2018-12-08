@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <windows.h>
 #include<string.h>
-
+#include<conio.h>
 #define maps_num 35//总共的关卡数量
 
 typedef struct Map {
@@ -19,7 +19,9 @@ typedef struct Map {
 	int aimy[50];
 	int last_x, last_y;
 	int box_x, box_y, box_nx,box_ny;
-
+	int edit_x, edit_y;
+	int edit_nx, edit_ny;
+	
 }Map;
 
 //函数前置声明
@@ -60,3 +62,4 @@ level:要读取的关卡
 返回值：
 */
 Map* LoadMap(int level);
+Map* EditMap(int level);

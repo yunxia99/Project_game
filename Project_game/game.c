@@ -104,7 +104,7 @@ void mainloop() {
 			case 'A':
 			case 'a':
 				gameloop(1);
-				
+
 				break;
 			case 27:
 				scenes = 0;
@@ -160,7 +160,7 @@ int gameloop(int level) {
 
 	char cheat1[10];
 	int root = 0;
-	
+
 
 	Map *map;
 	map = LoadMap(level);
@@ -206,7 +206,7 @@ int gameloop(int level) {
 				{
 				case ' ':
 				case 'X':
-					
+
 					map->map[y - 1][x] = '@';
 					map->map[y][x] = ' ';
 					y = y - 1;
@@ -311,7 +311,7 @@ int gameloop(int level) {
 					break;
 				}
 				break;
-			
+
 				//ÖØÖÃ¹Ø¿¨
 			case 'R':
 			case'r':
@@ -356,7 +356,7 @@ int gameloop(int level) {
 				switch (cheat)
 				{
 				case 1:
-					scenes=2;
+					scenes = 2;
 					break;
 				case 2:
 					isEnd = 1;
@@ -372,20 +372,20 @@ int gameloop(int level) {
 				break;
 			}
 			break;
-			case 2:
-				if ((key == 'a') && level > 1)
-					level--;
-				else if ((key == 'd') && level < maps_num)
-					level++;
-				else if ((key == 13 || key == 32)) {
-					scenes = 0;
-					map = LoadMap(level);
-					x = map->x;
-					y = map->y;
-					break;
-				}
-					
-			default:
+		case 2:
+			if ((key == 'a') && level > 1)
+				level--;
+			else if ((key == 'd') && level < maps_num)
+				level++;
+			else if ((key == 13 || key == 32)) {
+				scenes = 0;
+				map = LoadMap(level);
+				x = map->x;
+				y = map->y;
+				break;
+			}
+
+		default:
 			break;
 		}
 
@@ -422,11 +422,11 @@ int gameloop(int level) {
 		//isend
 		if (isEnd)
 			break;
-	
-}
-	if(root)
-		gameloop1(level+1);
-   
+
+	}
+	if (root)
+		gameloop1(level + 1);
+
 	//clear
 
 
@@ -527,7 +527,7 @@ int gameloop1(int level) {
 				break;
 			case 'S':
 			case 's':
-				
+
 				switch (map->map[y + 1][x])
 				{
 				case ' ':
@@ -564,7 +564,7 @@ int gameloop1(int level) {
 				break;
 			case 'A':
 			case 'a':
-				
+
 				switch (map->map[y][x - 1])
 				{
 				case ' ':
@@ -600,7 +600,7 @@ int gameloop1(int level) {
 				break;
 			case 'D':
 			case 'd':
-				
+
 				switch (map->map[y][x + 1])
 				{
 				case ' ':
@@ -680,10 +680,10 @@ int gameloop1(int level) {
 				break;
 			case 13:
 				gets(cheat1);
-				if (strcmp(cheat1, "root") == 0) 
+				if (strcmp(cheat1, "root") == 0)
 					cheat = 1;
-				else if(strcmp(cheat1, "cancel")==0)
-					cheat=2;
+				else if (strcmp(cheat1, "cancel") == 0)
+					cheat = 2;
 				switch (cheat)
 				{
 				case 1:
@@ -696,7 +696,7 @@ int gameloop1(int level) {
 				break;
 
 			case 27:
-				isEnd= 1;
+				isEnd = 1;
 				break;
 			default:
 				break;
@@ -753,8 +753,8 @@ int gameloop1(int level) {
 		if (isEnd)
 			break;
 	}
-	if(root)
-	gameloop(level);
+	if (root)
+		gameloop(level);
 
 	//clear
 

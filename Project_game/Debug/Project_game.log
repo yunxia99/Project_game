@@ -1,11 +1,18 @@
 ﻿  game.c
-e:\hello world\project_game\project_game\game.c(82): warning C4013: “getch”未定义；假设外部返回 int
+e:\hello world\project_game\project_game\game.c(82): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\conio.h(453): note: 参见“getch”的声明
 e:\hello world\project_game\project_game\game.c(28): warning C4101: “cheat1”: 未引用的局部变量
-e:\hello world\project_game\project_game\game.c(352): warning C4013: “gets”未定义；假设外部返回 int
-e:\hello world\project_game\project_game\game.c(773): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+e:\hello world\project_game\project_game\game.c(350): warning C4013: “gets”未定义；假设外部返回 int
+e:\hello world\project_game\project_game\game.c(196): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\conio.h(453): note: 参见“getch”的声明
+e:\hello world\project_game\project_game\game.c(486): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  e:\windows kits\10\include\10.0.17134.0\ucrt\conio.h(453): note: 参见“getch”的声明
+e:\hello world\project_game\project_game\game.c(771): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1774): note: 参见“sprintf”的声明
-e:\hello world\project_game\project_game\game.c(774): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+e:\hello world\project_game\project_game\game.c(772): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   e:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(208): note: 参见“fopen”的声明
-e:\hello world\project_game\project_game\game.c(436): warning C4716: “gameloop”: 必须返回一个值
-e:\hello world\project_game\project_game\game.c(765): warning C4716: “gameloop1”: 必须返回一个值
+  main.c
+  正在生成代码...
+e:\hello world\project_game\project_game\game.c(434): warning C4716: “gameloop”: 必须返回一个值
+e:\hello world\project_game\project_game\game.c(763): warning C4716: “gameloop1”: 必须返回一个值
   Project_game.vcxproj -> E:\hello world\Project_game\Debug\Project_game.exe
